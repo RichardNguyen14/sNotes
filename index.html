@@ -1,0 +1,719 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>NOTES</title>
+  </head>
+
+  <body>
+    <div class="flex">
+      <!-- Nav Bar -->
+      <div class="bg-[#004C42] w-1/5 px-5 h-screen max-h-full relative">
+        <div class="pb-28 pt-8 pl-8">
+          <h1 class="text-4xl font-semibold text-white">NOTES</h1>
+        </div>
+
+        <div class="grid gap-5">
+          <div class="flex gap-5 items-center pl-6">
+            <i class="fa-solid fa-magnifying-glass text-[#99b7b3]"></i>
+            <input
+              class="text-white bg-[#004C42] outline-none border-none"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="border-t-[1px] border-[#357169]"></div>
+        </div>
+
+        <div class="text-[#99b7b3] grid gap-8 pt-12">
+          <div class="h-12 rounded-2xl bg-[#003d35] flex items-center gap-5">
+            <i class="fa-solid fa-house pl-6 text-[#d9f47b]"></i>
+            <a class="text-white" href="#">Home</a>
+          </div>
+          <div class="flex justify-between px-6">
+            <div class="flex gap-5 items-center">
+              <i class="fa-regular fa-bell"></i>
+              <a href="#">Notification</a>
+            </div>
+            <div
+              class="w-[28px] h-[28px] rounded-lg bg-[#D9F47B] text-black text-center"
+            >
+              4
+            </div>
+          </div>
+          <div class="px-6 flex gap-5 items-center">
+            <i class="fa-regular fa-note-sticky"></i>
+            <a href="#">Notes</a>
+          </div>
+          <div class="px-6 flex gap-5 items-center">
+            <i class="fa-solid fa-trash-can"></i>
+            <a href="#">Trash</a>
+          </div>
+          <div class="px-6 flex gap-5 items-center">
+            <i class="fa-solid fa-gear"></i>
+            <a href="#">Settings</a>
+          </div>
+        </div>
+
+        <div class="flex absolute bottom-4 items-center text-white px-6 gap-5">
+          <div class="w-[44px] h-[44px] rounded-full bg-[#d9f47b]"></div>
+          <div>John Gilbert</div>
+          <div>...</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="w-full">
+        <!-- Content Header -->
+        <div class="h-[27%]">
+          <img
+            class="w-full h-full"
+            src="./assets/img/434905989_397637143121397_7856233510601723438_n.png"
+            alt=""
+          />
+        </div>
+        <!-- Content Body -->
+        <div class="pt-7 px-5">
+          <div class="flex items-center text-xl gap-3">
+            <i class="fa-regular fa-note-sticky text-[#5d8c81]"></i>
+            <h1 class="text-[#122d28] font-semibold">My Notes</h1>
+          </div>
+
+          <!-- Card -->
+          <div class="grid grid-cols-4 gap-4 overflow-y-auto h-[530px] pt-7">
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-slate-400 max-w-fit ml-5 w-full px-2 cursor-pointer mb-2"
+              >
+                <label class="cursor-pointer" for="">Label</label>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#d9f47b] rounded-xl h-fit">
+              <div class="flex justify-end pr-3 pt-2">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-thumbtack"></i>
+                </div>
+              </div>
+              <div>
+                <div class="pl-5">
+                  <h1 class="text-xl font-medium">Tittle</h1>
+                </div>
+              </div>
+              <div
+                class="px-5 pb-2 inline-block max-h-[100px] text-ellipsis overflow-hidden"
+              >
+                <p class="text-[#577245] text-ellipsis">
+                  React (hay còn được gọi là React.js hoặc ReactJS) là một thư
+                  viện JavaScript front-end mã nguồn mở và miễn phí[2] để xây
+                  dựng giao diện người dùng dựa trên các thành phần UI riêng lẻ.
+                  Nó được phát triển và duy trì bởi Meta (trước đây là Facebook)
+                  và cộng đồng các nhà phát triển và công ty cá nhân.[3][4][5]
+                  React có thể được sử dụng làm cơ sở để phát triển các ứng dụng
+                  SPA (Single-page), thiết bị di động hoặc ứng dụng được kết
+                  xuất bằng máy chủ với các thư viện khác như Next.js.
+                </p>
+              </div>
+
+              <div class="flex gap-3 pl-5 pb-3">
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div
+                  class="w-[30px] h-[30px] bg-[#99b7b3] rounded-full flex justify-center items-center text-2xl"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
